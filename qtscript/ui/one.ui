@@ -32,7 +32,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">image: url(:/two.png);</string>
+    <string notr="true">image: url(:/icons/2.png);</string>
    </property>
    <property name="text">
     <string/>
