@@ -2,7 +2,7 @@
 
 /*noinspection ALL*/
 QPushButton {
-    image: url(./icons/2.png);
+    image: url(:two.png);
     /*image: url(./resource/icons/combo_down.png);*/
     border-top: 2px solid green;
     border-right: 2px solid green;
