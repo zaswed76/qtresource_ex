@@ -2,4 +2,4 @@
 recursive-include qtscript/etc *.json
 recursive-include qtscript/ui *.ui
 recursive-include qtscript/css *.css
-recursive-include qtscript/resource *
+recursive-include qtscript/icons *

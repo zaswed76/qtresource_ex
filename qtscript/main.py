@@ -1,6 +1,6 @@
 import os
 import sys
-from PyQt5 import QtWidgets, uic, QtGui
+from PyQt5 import QtWidgets, uic, QtGui, QtCore
 from  qtscript import images_rc
 
 ROOT = os.path.join(os.path.dirname(__file__))
@@ -14,14 +14,20 @@ class Main(QtWidgets.QFrame):
         #     os.path.join(UI_DIR, "one.ui"), self)
         # self.box.addWidget(self.form)
 
-        self.lb = QtWidgets.QLabel(self)
-        self.lb.setPixmap(QtGui.QPixmap(':two.png'))
+        self.lb = QtWidgets.QPushButton(self)
+        self.lb.move(100, 100)
+        # self.lb.setIcon(QtGui.QIcon(':two.png'))
+
+        self.lb.setIconSize(QtCore.QSize(50, 50))
         self.resize(300, 200)
 
 
 def main():
+
     app = QtWidgets.QApplication(sys.argv)
-    # app.setStyleSheet(open('./etc/{0}.qss'.format('style'), "r").read())
+
+    css_file = os.path.join(ROOT, "css/tool.css")
+    app.setStyleSheet(open(css_file, "r").read())
     main = Main()
     main.show()
     sys.exit(app.exec_())
