@@ -16,7 +16,7 @@ setup(
         install_requires=[],
         entry_points={
             'console_scripts':
-                ['qtscript = qtscript.main:Main']
+                ['qtscript = qtscript.main:main']
         }
 
 )
