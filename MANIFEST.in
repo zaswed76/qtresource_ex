@@ -1,5 +1,5 @@
 
-recursive-include add_table/etc *.json
-recursive-include add_table/gui/ui *.ui
-recursive-include add_table/css *.css
-recursive-include add_table/resource *
+recursive-include qtscript/etc *.json
+recursive-include qtscript/ui *.ui
+recursive-include qtscript/css *.css
+recursive-include qtscript/resource *
